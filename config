@@ -29,7 +29,7 @@ markup=pango
 
 [VOLUME]
 label=🔈
-command=~/.config/i3-volume/volume output i3blocks
+command=~/.config/i3blocks/volume
 interval=repeat
 signal=2
 color=#a8c3ed
