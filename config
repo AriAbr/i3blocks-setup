@@ -20,7 +20,7 @@ signal=10
 
 [BRIGHTNESS]
 label=🔆
-command=echo $(light | cut -d. -f1)%
+command=echo "scale=0 ; 100 * $(brightnessctl g) / $(brightnessctl m)" | bc | sed 's/$/%/'
 interval=once
 signal=1
 color=#a8c3ed
