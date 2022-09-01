@@ -21,7 +21,7 @@ signal=10
 [BRIGHTNESS]
 label=🔆
 command=echo "scale=0 ; 100 * $(brightnessctl g) / $(brightnessctl m)" | bc | sed 's/$/%/'
-interval=once
+interval=3
 signal=1
 color=#a8c3ed
 separator_block_width=10
